@@ -31,6 +31,7 @@ const SmartImage: React.FC<SmartImageProps> = ({
   sizes = "100vw",
   ...rest
 }) => {
+  console.log("src",src)
   const [isEnlarged, setIsEnlarged] = useState(false);
   const imageRef = useRef<HTMLDivElement>(null);
 

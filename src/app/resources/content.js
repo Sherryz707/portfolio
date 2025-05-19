@@ -1,41 +1,39 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Shahr Bano",
+  lastName: "Bokhari",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Full Stack Developer & AI Engineer",
+  avatar: "/images/avatar.jpeg",
+  email: "sbano.dev@gmail.com",
+  location: "Asia/Karachi",
+  languages: ["English", "Urdu"],
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I write about full-stack development, AI systems, and building intelligent digital solutions
+      using modern tools and frameworks.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Sherryz707",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/shahrbano-bokhari-55989135b/",
   },
   {
     name: "X",
@@ -55,16 +53,16 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building intelligent, full-stack applications and AI-powered systems</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">AI Hiring Agent</strong></>,
+    href: "/work/intelligent-hiring-agent-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm {person.firstName}, a full stack developer passionate about applied AI, agentic systems,
+      and building meaningful software experiences.
     </>
   ),
 };
@@ -90,107 +88,165 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Shahr Bano Bokhari is a Lahore-based full stack developer and AI engineer with deep
+        experience in web development, backend architecture, and machine learning. Her work
+        integrates MERN, TypeScript, Django REST, FastAPI, R, and agentic AI systems to build
+        intelligent, scalable solutions.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "ScryptHub",
+        timeframe: "Mar 2025 – Present",
+        role: "Full Stack Developer",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Engineered a clean-architecture backend in TypeScript using Express and MongoDB.</>,
+          <>Designed RESTful APIs and implemented JWT authentication with RBAC.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [{
+          src: "/images/projects/scrypthub/cover.PNG",
+          alt: "image",
+          width: 16,
+          height: 9
+        }],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "LatamRecruit",
+        timeframe: "May 2025 – Present",
+        role: "Full Stack Developer",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Developing a secure admin panels and APIs for blog, lead, faq, user management and more.</>,
+          <>Integrating Mailtrap (for testing) and SendGrid (for production) for robust email handling in production.</>,
         ],
-        images: [],
+        images:[{
+          src: "/images/projects/recruit/home.jpg",
+          alt: "image",
+          width: 16,
+          height: 9
+        }]
+      },
+      {
+        company: "AIQ Decisions",
+        timeframe: "Jan 2025 – Feb 2025",
+        role: "No-Code Intern",
+        achievements: [
+          <>Built a real-time inventory app with AppSheet and integrated with BigQuery.</>,
+          <>Automated workflows to streamline stock management and purchasing.</>,
+        ],
+        images: [{
+          src: "/images/projects/smartflow/img-1.png",
+          alt: "image",
+          width: 16,
+          height: 9
+        }],
+      },
+      {
+        company: "Reborn Electronics",
+        timeframe: "Sep 2024 – Sep 2025",
+        role: "Full Stack Developer",
+        achievements: [
+          <>Developed e-commerce pages with Next.js, Saleor, and GraphQL.</>,
+          <>Integrated JazzCash and implemented dynamic product features.</>,
+        ],
+        images: [{
+          src: "/images/projects/reborn/figma.jpeg",
+          alt: "image",
+          width: 16,
+          height: 9
+        }],
+      },
+      {
+        company: "Resilience",
+        timeframe: "Feb 2024 – Feb 2025",
+        role: "Web Developer",
+        achievements: [
+          <>Built a modern business site with custom ThemeForest template implementation.</>,
+          <>Improved brand presence through responsive design and UX refinement.</>,
+        ],
+        images: [{
+          src: "/images/projects/resilience/home.png",
+          alt: "image",
+          width: 16,
+          height: 9
+        }],
+      },
+      {
+        company: "FYP Project",
+        timeframe: "Feb 2024 – Jul 2025",
+        role: "Full Stack Developer",
+        achievements: [
+          <>Created 3D sign recognition app using FastAI and React Three Fiber.</>,
+          <>Implemented Supabase backend for user data and content delivery.</>,
+        ],
+        images: [ {
+        src: "/images/projects/sign/game-2.jpg",
+        alt: "image",
+        width: 16,
+        height: 9
+      }],
+      },
+      {
+        company: "NutriDiaries",
+        timeframe: "Feb 2024 – Feb 2025",
+        role: "Full Stack Developer",
+        achievements: [
+          <>Created a dynamic blog using Next.js + Sanity.cms</>,
+          <>Fullstack development complete with blog and admin panel for adding blogs</>,
+        ],
+        images: [ {
+      src: "/images/projects/nutridiaries/screenshot (3).png",
+      alt: "image",
+      width: 16,
+      height: 9
+    }],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of Management and Technology (UMT), Lahore",
+        description: <>B.S. in Computer Science, graduating July 2025.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Punjab Group of Colleges (PGC), Lahore",
+        description: <>Intermediate – 2021</>,
+      },
+      {
+        name: "Beaconhouse School System (BSS), Lahore",
+        description: <>Matriculation – 2019</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Frontend & UI",
+        description: <>React, Next.js, TypeScript, Shadcn UI, React Three Fiber (R3F)</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Backend & APIs",
+        description: <>Node.js, Express, FastAPI, Supabase, PostgreSQL, RESTful API design</>,
+        images: [],
+      },
+      {
+        title: "AI/ML & Python",
+        description: <>FastAI, scikit-learn, Pandas, LangChain, RAG, Ollama integration</>,
+        images: [],
+      },
+      {
+        title: "Data & Visualization",
+        description: <>Python, R (ggplot2, dplyr, caret), Matplotlib, Seaborn</>,
+        images: [],
       },
     ],
   },
@@ -199,69 +255,184 @@ const about = {
 const blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about development, AI, and systems...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Selected full-stack and AI projects by ${person.name}`,
 };
 
 const gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  description: `A visual archive by ${person.name}`,
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/projects/sign/game-2.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
+      src: "/images/projects/sign/game-png.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
+      src: "/images/projects/sign/category.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
+      src: "/images/projects/sign/colouring.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/projects/sign/1.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/sign/2.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/sign/3.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/sign/quiz-2-reaction.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/sign/wuiz-2.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/smartflow/img-2.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/smartflow/img-1.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/scrypthub/cover.PNG",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/recruit/home.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/recruit/aboutUs.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/recruit/admin-login.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/recruit/admin-seo.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/recruit/admin.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/recruit/admon-leads.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/recruit/users.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/recruit/faq.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/nutridiaries/screenshot (3).png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/nutridiaries/screenshot (2).png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/nutridiaries/screenshot (4).png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/nutridiaries/screenshot (5).png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/nutridiaries/screenshot (6).png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/nutridiaries/screenshot (7).png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/reborn/figma.jpeg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/reborn/cover.jpeg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/reborn/img-1.jpeg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/reborn/img-2.jpeg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
+      src: "/images/projects/reborn/img-3.jpeg",
       alt: "image",
-      orientation: "vertical",
+      orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
+      src: "/images/projects/reborn/img-4.jpeg",
       alt: "image",
-      orientation: "vertical",
+      orientation: "horizontal",
     },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    
   ],
 };
 
