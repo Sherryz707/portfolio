@@ -56,8 +56,8 @@ const home = {
   headline: <>Building intelligent, full-stack applications and AI-powered systems</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">AI Hiring Agent</strong></>,
-    href: "/work/intelligent-hiring-agent-system",
+    title: <>Recent project: <strong className="ml-4">LatamRecruiting Platform</strong></>,
+    href: "/work/Building-a-Scalable-Full-Stack-Recruitment-Platform-at-LatamRecruit",
   },
   subline: (
     <>
@@ -183,7 +183,7 @@ const about = {
           <>Implemented Supabase backend for user data and content delivery.</>,
         ],
         images: [ {
-        src: "/images/projects/sign/game-2.jpg",
+        src: "/images/projects/sign/game-2.JPG",
         alt: "image",
         width: 16,
         height: 9
@@ -198,7 +198,7 @@ const about = {
           <>Fullstack development complete with blog and admin panel for adding blogs</>,
         ],
         images: [ {
-      src: "/images/projects/nutridiaries/screenshot (3).png",
+      src: "/images/projects/nutridiaries/Screenshot (3).png",
       alt: "image",
       width: 16,
       height: 9
@@ -273,47 +273,47 @@ const gallery = {
   description: `A visual archive by ${person.name}`,
   images: [
     {
-      src: "/images/projects/sign/game-2.jpg",
+      src: "/images/projects/sign/game-2.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/sign/game-png.jpg",
+      src: "/images/projects/sign/game-png.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/sign/category.jpg",
+      src: "/images/projects/sign/category.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/sign/colouring.jpg",
+      src: "/images/projects/sign/colouring.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/sign/1.jpg",
+      src: "/images/projects/sign/1.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/sign/2.jpg",
+      src: "/images/projects/sign/2.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/sign/3.jpg",
+      src: "/images/projects/sign/3.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/sign/quiz-2-reaction.jpg",
+      src: "/images/projects/sign/quiz-2-reaction.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/sign/wuiz-2.jpg",
+      src: "/images/projects/sign/wuiz-2.JPG",
       alt: "image",
       orientation: "horizontal",
     },
@@ -333,72 +333,72 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/recruit/home.jpg",
+      src: "/images/projects/recruit/home.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/recruit/aboutUs.jpg",
+      src: "/images/projects/recruit/aboutUs.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/recruit/admin-login.jpg",
+      src: "/images/projects/recruit/admin-login.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/recruit/admin-seo.jpg",
+      src: "/images/projects/recruit/admin-seo.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/recruit/admin.jpg",
+      src: "/images/projects/recruit/admin.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/recruit/admon-leads.jpg",
+      src: "/images/projects/recruit/admon-leads.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/recruit/users.jpg",
+      src: "/images/projects/recruit/users.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/recruit/faq.jpg",
+      src: "/images/projects/recruit/faq.JPG",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/nutridiaries/screenshot (3).png",
+      src: "/images/projects/nutridiaries/Screenshot (3).png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/nutridiaries/screenshot (2).png",
+      src: "/images/projects/nutridiaries/Screenshot (2).png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/nutridiaries/screenshot (4).png",
+      src: "/images/projects/nutridiaries/Screenshot (4).png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/nutridiaries/screenshot (5).png",
+      src: "/images/projects/nutridiaries/Screenshot (5).png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/nutridiaries/screenshot (6).png",
+      src: "/images/projects/nutridiaries/Screenshot (6).png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/nutridiaries/screenshot (7).png",
+      src: "/images/projects/nutridiaries/Screenshot (7).png",
       alt: "image",
       orientation: "horizontal",
     },
