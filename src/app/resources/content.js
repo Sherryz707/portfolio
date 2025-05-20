@@ -100,6 +100,25 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Final Year Project (AI-Powered Sign Language Platform)",
+        timeframe: "Feb 2024 – Present",
+        role: "Full Stack Developer & ML Engineer",
+        achievements: [
+          <>Developed a real-time sign language recognition system using <strong>FastAI</strong>, trained on multilingual gesture datasets (ASL, Urdu ASL, numbers).</>,
+          <>Integrated <strong>React Three Fiber</strong> and <strong>Three-VRM</strong> to animate 3D avatars based on ML predictions for immersive feedback.</>,
+          <>Engineered a secure, scalable backend using <strong>Supabase (PostgreSQL)</strong> for user auth, content delivery, and progress tracking.</>,
+          <>Seamlessly connected model inference to the frontend for <strong>live gesture-to-animation mapping</strong> using structured JSON pipelines.</>,
+        ],
+        images: [
+          {
+            src: "/images/projects/sign/game-2.JPG",
+            alt: "Sign language e-learning game interface",
+            width: 16,
+            height: 9
+          }
+        ]
+      },
+      {
         company: "ScryptHub",
         timeframe: "Mar 2025 – Present",
         role: "Full Stack Developer",
@@ -128,40 +147,66 @@ const about = {
           width: 16,
           height: 9
         }]
+      },{
+        company: "ML Algorithms Series (Colab Notebooks)",
+        timeframe: "Present",
+        role: "ML Engineer (Self-Driven Learning Project)",
+        achievements: [
+          <>Completed a hands-on deep dive into core <strong>supervised machine learning algorithms</strong> using <strong>Jupyter Notebooks</strong> in <strong>Google Colab</strong>.</>,
+          <>Implemented and compared performance of key models including <strong>Linear Regression</strong>, <strong>Ridge/Lasso/ElasticNet</strong>, <strong>Logistic Regression</strong>, <strong>Naive Bayes</strong>, <strong>KNN</strong>, <strong>Decision Trees</strong>, <strong>Random Forests</strong>, <strong>Gradient Boosting</strong>, <strong>AdaBoost</strong>, and <strong>XGBoost</strong>.</>,
+          <>Visualized model metrics and feature impact using <strong>Matplotlib</strong>, <strong>Seaborn</strong>, and <strong>Confusion Matrices</strong> for interpretability.</>,
+          <>Followed and completed the Udemy course "<em>The Complete Data Science with Machine Learning and NLP</em>" by <strong>Krish Naik</strong> as structured curriculum guidance.</>
+        ],
+        images: [
+          {
+            src: "/images/projects/colab/colab.PNG",
+            alt: "Overview of ML algorithm comparisons in Colab",
+            width: 16,
+            height: 9
+          }
+        ]
       },
       {
         company: "AIQ Decisions",
         timeframe: "Jan 2025 – Feb 2025",
-        role: "No-Code Intern",
+        role: "No-Code Developer Intern",
         achievements: [
-          <>Built a real-time inventory app with AppSheet and integrated with BigQuery.</>,
-          <>Automated workflows to streamline stock management and purchasing.</>,
+          <>Developed a responsive <strong>real-time inventory management system</strong> using <strong>Google AppSheet</strong>, enabling seamless multi-device access and operational oversight.</>,
+          <>Integrated <strong>BigQuery</strong> for scalable backend data handling and <strong>live reporting dashboards</strong> to support informed supply chain decisions.</>,
+          <>Automated workflows for <strong>stock alerts, purchase orders, and supplier coordination</strong>, significantly reducing manual overhead.</>,
+          <>Helped replace costly third-party systems like Zoho and NetSuite with a <strong>lightweight, AI-assisted internal tool</strong> tailored to business logic.</>
         ],
-        images: [{
-          src: "/images/projects/smartflow/img-1.png",
-          alt: "image",
-          width: 16,
-          height: 9
-        }],
+        images: [
+          {
+            src: "/images/projects/smartflow/img-1.png",
+            alt: "Inventory workflow dashboard interface",
+            width: 16,
+            height: 9
+          }
+        ]
       },
       {
         company: "Reborn Electronics",
-        timeframe: "Sep 2024 – Sep 2025",
-        role: "Full Stack Developer",
+        timeframe: "Sep 2023 – Sep 2024",
+        role: "Full Stack Developer & AI Chatbot Integrator",
         achievements: [
-          <>Developed e-commerce pages with Next.js, Saleor, and GraphQL.</>,
-          <>Integrated JazzCash and implemented dynamic product features.</>,
+          <>Engineered scalable e-commerce pages using <strong>Next.js</strong>, <strong>Saleor</strong>, and <strong>GraphQL</strong>, with dynamic catalog features like filtering, pagination, and personalized recommendations.</>,
+          <>Integrated <strong>JazzCash</strong> for secure, localized payment processing, ensuring smooth UX and data privacy compliance.</>,
+          <>Built and styled a fully responsive UI from <strong>Figma</strong> designs using <strong>Headless UI</strong> and <strong>Tailwind CSS</strong> for consistent multi-device performance.</>,
+          <>Developed a basic <strong>RAG-based AI assistant</strong> using <strong>LangChain</strong> and <strong>Ollama</strong> with vector embeddings to help customers browse and find products intelligently.</>
         ],
-        images: [{
-          src: "/images/projects/reborn/figma.jpeg",
-          alt: "image",
-          width: 16,
-          height: 9
-        }],
+        images: [
+          {
+            src: "/images/projects/reborn/cover.jpeg",
+            alt: "E-commerce platform",
+            width: 16,
+            height: 9
+          }
+        ]
       },
       {
         company: "Resilience",
-        timeframe: "Feb 2024 – Feb 2025",
+        timeframe: "Feb 2024 – Feb 2024",
         role: "Web Developer",
         achievements: [
           <>Built a modern business site with custom ThemeForest template implementation.</>,
@@ -175,23 +220,8 @@ const about = {
         }],
       },
       {
-        company: "FYP Project",
-        timeframe: "Feb 2024 – Jul 2025",
-        role: "Full Stack Developer",
-        achievements: [
-          <>Created 3D sign recognition app using FastAI and React Three Fiber.</>,
-          <>Implemented Supabase backend for user data and content delivery.</>,
-        ],
-        images: [ {
-        src: "/images/projects/sign/game-2.JPG",
-        alt: "image",
-        width: 16,
-        height: 9
-      }],
-      },
-      {
         company: "NutriDiaries",
-        timeframe: "Feb 2024 – Feb 2025",
+        timeframe: "Feb 2024 – Mar 2024",
         role: "Full Stack Developer",
         achievements: [
           <>Created a dynamic blog using Next.js + Sanity.cms</>,

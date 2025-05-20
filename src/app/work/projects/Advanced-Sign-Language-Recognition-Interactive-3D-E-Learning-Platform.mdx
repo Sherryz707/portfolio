@@ -1,7 +1,7 @@
 ---
-title: "Advanced Sign Language Recognition & Interactive 3D E-Learning Platform"
+title: "AI-Powered Sign Language Recognition & Interactive 3D Learning System"
 publishedAt: "2025-02-28"
-summary: "Led full-stack development of a machine learning-powered sign recognition system integrated with immersive 3D avatar visualization, delivering a cutting-edge e-learning experience."
+summary: "Designed and engineered an AI-driven e-learning platform combining real-time gesture recognition with interactive 3D avatars, leveraging deep learning, vectorized feedback, and full-stack orchestration."
 images:
   - "/images/projects/sign/game-2.JPG"
   - "/images/projects/sign/game-png.JPG"
@@ -11,45 +11,47 @@ images:
   - "/images/projects/sign/1.JPG"
 team:
   - name: "Shahr Bano Bokhari"
-    role: "Full Stack Developer & ML Engineer"
+    role: "Full Stack Developer & Machine Learning Engineer"
     avatar: "/images/avatar.jpeg"
     linkedIn: "https://www.linkedin.com/in/shahrbano-bokhari-55989135b/"
 ---
 
 ## Overview
 
-For my Final Year Project (FYP), I spearheaded the development of an advanced machine learning and full-stack application focused on sign language recognition and education. The platform supports multiple sign languages including English American Sign Language (ASL), Urdu Sign Language (ASLL), and numerical signs, enabling accurate gesture detection and classification through state-of-the-art models built with FastAI.
+For my Final Year Project (FYP), I architected and delivered an end-to-end AI application that combines **deep learning-based gesture recognition** with **3D avatar-based feedback** to create an immersive, interactive sign language education platform.
 
-To create an engaging and interactive learning experience, I developed immersive 3D front-end visualizations using React Three Fiber (R3F) and Three-VRM. The VRM avatars are programmatically animated in real-time based on JSON input from sign recognition models, providing dynamic and realistic sign language feedback.
+The system supports English ASL, Urdu ASLL, and numerical signs, utilizing FastAI-trained CNN models for accurate, real-time sign classification. These predictions drive **live VRM avatar animations** using React Three Fiber and Three-VRM — producing a visual, embodied feedback loop ideal for learners.
 
-A robust and scalable backend architecture was designed using Supabase with PostgreSQL to securely manage user data, track learner progress, and deliver content seamlessly. This full-stack solution integrates machine learning outputs with responsive frontend components for real-time interaction and feedback, building an accessible e-learning platform optimized for both education and usability.
+A Supabase-backed backend handles authentication, content delivery, and user progress tracking — forming a robust full-stack environment where ML predictions are seamlessly integrated into the UI/UX flow. This platform bridges computer vision and real-time interactivity to push the boundaries of accessible, AI-native ed-tech.
 
 ## Key Features
 
-- **Multi-Language Sign Recognition**: Developed and trained FastAI-based ML models to recognize and classify signs from multiple sign languages with high accuracy.
-- **Interactive 3D Avatar Visualization**: Created real-time VRM avatar animations controlled via JSON input to visualize recognized signs, enhancing learner engagement.
-- **Scalable Backend Infrastructure**: Implemented user authentication, data storage, progress tracking, and content delivery using Supabase and PostgreSQL.
-- **Real-Time Frontend Integration**: Seamlessly integrated ML predictions with React frontend to provide instant feedback and interactive learning.
-- **API Design & Security**: Applied best practices in RESTful API development, JWT authentication, and database schema design for a secure and maintainable system.
+- **Multilingual Gesture Recognition**: Trained convolutional neural networks (CNNs) with FastAI for accurate classification across ASL, Urdu ASL, and numeric signs.
+- **Real-Time Inference Integration**: Connected ML model outputs to the frontend pipeline, enabling immediate avatar-driven visual feedback.
+- **3D Avatar Control via JSON Pipelines**: Mapped ML outputs to Three-VRM avatar actions, synchronizing sign semantics with realistic animations.
+- **Secure, Scalable Backend**: Designed a Supabase + PostgreSQL backend to handle user data, progression metrics, and content APIs.
+- **Full-Stack AI Deployment**: Orchestrated ML model inference, database queries, and front-end rendering into a unified, real-time user experience.
 
 ## Technologies Used
 
-- **FastAI**: For developing and training deep learning models for sign recognition.
-- **React Three Fiber (R3F) & Three-VRM**: For 3D avatar rendering and animation.
-- **Supabase (PostgreSQL)**: Backend platform for authentication, database management, and hosting.
-- **React.js & TypeScript**: For building frontend UI and integrating ML results.
-- **REST APIs & JWT**: For secure communication between frontend and backend.
+- **FastAI**: Transfer learning for image classification with rapid prototyping.
+- **React Three Fiber & Three-VRM**: For WebGL-powered 3D avatar animations driven by ML signals.
+- **Supabase**: Backend-as-a-service with PostgreSQL, authentication, and real-time APIs.
+- **React.js & TypeScript**: For building performant, component-based UIs.
+- **REST APIs + JWT**: For secure model data exchange and user authentication.
 
 ## Challenges and Learnings
 
-A significant challenge was achieving real-time sign detection with low latency while maintaining high prediction accuracy across multiple sign languages. Integrating 3D animations that accurately reflected detected gestures required precise synchronization between ML outputs and VRM avatar controls.
+Integrating live ML inference into a 3D front-end pipeline required low-latency prediction serving and tight control over animation timing. Mapping gesture classifications to avatar motions meant designing a middleware layer to convert prediction tensors into semantic motion instructions.
 
-Designing a scalable and secure backend to support dynamic user interactions and progress tracking demanded careful database schema planning and API optimization. This project deepened my understanding of combining machine learning models with rich frontend experiences and scalable backend architecture.
+I also encountered edge cases in model generalization across languages and sign styles, which improved my understanding of data augmentation, loss functions, and multi-class evaluation.
+
+Architecturally, designing a system that orchestrates ML, backend, and interactive frontend components taught me to think in terms of **AI-native application flows**.
 
 ## Outcome
 
-The project culminated in a fully functional e-learning platform that supports immersive, interactive sign language education with real-time feedback. It demonstrated a novel integration of AI-driven gesture recognition with 3D visualization, significantly enhancing accessibility for learners. This experience strengthened my expertise in full-stack development, machine learning engineering, and interactive web applications.
+The final platform functions as a **real-time AI learning assistant**, offering multimodal sign feedback via accurate recognition and expressive 3D animation. It demonstrates how **AI models can be productized into user-centric applications** with meaningful educational outcomes. This experience sharpened my skills in applied ML, AI UX design, and full-stack orchestration — aligning directly with modern AI tooling and agent-based architectures.
 
 ---
 
-This project showcases my ability to architect complex, AI-powered full-stack systems with a focus on user engagement and educational impact.
+This project exemplifies my ability to build applied AI experiences — combining vision models, real-time inference, and immersive frontends into scalable, impactful software systems.
