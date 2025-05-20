@@ -142,7 +142,7 @@ const about = {
           <>Integrating Mailtrap (for testing) and SendGrid (for production) for robust email handling in production.</>,
         ],
         images:[{
-          src: "/images/projects/recruit/home.jpg",
+          src: "/images/projects/recruit/home.JPG",
           alt: "image",
           width: 16,
           height: 9
@@ -159,8 +159,8 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/colab/colab.PNG",
-            alt: "Overview of ML algorithm comparisons in Colab",
+            src: "/images/projects/ml-algos/colab-cover.PNG",
+            alt: "Tree Algo in Colab",
             width: 16,
             height: 9
           }
