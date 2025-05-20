@@ -353,7 +353,22 @@ const gallery = {
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/smartflow/img-1.png",
+      src: "/images/projects/ml-algos/colab-2.PNG",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/ml-algos/colab-3.PNG",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/ml-algos/colab-cover.PNG",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/projects/ml-algos/colab.PNG",
       alt: "image",
       orientation: "horizontal",
     },
