@@ -1,57 +1,68 @@
 ---
-title: "AI-Powered Sign Language Recognition & Interactive 3D Learning System"
-publishedAt: "2025-02-28"
-summary: "Designed and engineered an AI-driven e-learning platform combining real-time gesture recognition with interactive 3D avatars, leveraging deep learning, vectorized feedback, and full-stack orchestration."
+title: 'AI-Driven Sign Language Learning Platform with Interactive 3D Avatars'
+publishedAt: '2025-02-28'
+summary: 'Engineered an AI-powered e-learning platform for sign language, integrating real-time gesture recognition with 3D avatars animated using Blender, supported by a full-stack architecture for an engaging educational experience.'
 images:
-  - "/images/projects/sign/game-2.JPG"
-  - "/images/projects/sign/game-png.JPG"
-  - "/images/projects/sign/quiz-2.JPG"
-  - "/images/projects/sign/wuiz-2.JPG"
-  - "/images/projects/sign/coloruing.JPG"
-  - "/images/projects/sign/1.JPG"
+  - '/images/projects/sign/game-2.JPG'
+  - '/images/projects/sign/game-png.JPG'
+  - '/images/projects/sign/quiz-2.JPG'
+  - '/images/projects/sign/wuiz-2.JPG'
+  - '/images/projects/sign/coloruing.JPG'
+  - '/images/projects/sign/1.JPG'
 team:
-  - name: "Shahr Bano Bokhari"
-    role: "Full Stack Developer & Machine Learning Engineer"
-    avatar: "/images/avatar.jpeg"
-    linkedIn: "https://www.linkedin.com/in/shahrbano-bokhari-55989135b/"
+  - name: 'Shahr Bano Bokhari'
+    role: 'Full Stack Developer & Machine Learning Engineer'
+    avatar: '/images/avatar.jpeg'
+    linkedIn: 'https://www.linkedin.com/in/shahrbano-bokhari-55989135b/'
+link: 'https://fyp-with-supabase.vercel.app/'
 ---
 
 ## Overview
 
-For my Final Year Project (FYP), I architected and delivered an end-to-end AI application that combines **deep learning-based gesture recognition** with **3D avatar-based feedback** to create an immersive, interactive sign language education platform.
+For my Final Year Project (FYP), I developed an AI-powered **e-learning platform** designed to teach sign language through real-time gesture recognition and interactive 3D avatars. The system supports English ASL, Urdu ASL, and numerical signs, using FastAI with ResNet34 to classify signs in real time. These predictions drive **VRM avatars**, animated using Blender and rendered with React Three Fiber and Three-VRM, to provide visual feedback for learners.
 
-The system supports English ASL, Urdu ASLL, and numerical signs, utilizing FastAI-trained CNN models for accurate, real-time sign classification. These predictions drive **live VRM avatar animations** using React Three Fiber and Three-VRM — producing a visual, embodied feedback loop ideal for learners.
+The platform includes four interactive quiz types:
 
-A Supabase-backed backend handles authentication, content delivery, and user progress tracking — forming a robust full-stack environment where ML predictions are seamlessly integrated into the UI/UX flow. This platform bridges computer vision and real-time interactivity to push the boundaries of accessible, AI-native ed-tech.
+- **Coloring the Alphabet**
+- **3D Teacher with Live Camera Checking**
+- **Card Selection Quiz**
+- **Sleepy Letter** (requiring three correct signs to "wake" a letter)
+
+A Supabase backend handles authentication, content delivery, and progress tracking, offering a seamless, scalable experience that blends computer vision with immersive, web-based learning.
 
 ## Key Features
 
-- **Multilingual Gesture Recognition**: Trained convolutional neural networks (CNNs) with FastAI for accurate classification across ASL, Urdu ASL, and numeric signs.
-- **Real-Time Inference Integration**: Connected ML model outputs to the frontend pipeline, enabling immediate avatar-driven visual feedback.
-- **3D Avatar Control via JSON Pipelines**: Mapped ML outputs to Three-VRM avatar actions, synchronizing sign semantics with realistic animations.
-- **Secure, Scalable Backend**: Designed a Supabase + PostgreSQL backend to handle user data, progression metrics, and content APIs.
-- **Full-Stack AI Deployment**: Orchestrated ML model inference, database queries, and front-end rendering into a unified, real-time user experience.
+- **Multilingual Sign Recognition**: Trained ResNet34 models with FastAI for accurate real-time classification of ASL, Urdu ASL, and numeric signs.
+- **Interactive Quizzes**:
+  - **Coloring the Alphabet**: Practice signing by coloring letters.
+  - **3D Teacher with Live Checking**: Real-time sign verification using a webcam.
+  - **Card Selection Quiz**: Choose the correct sign from displayed cards.
+  - **Sleepy Letter**: Sign correctly three times to "wake" a letter.
+- **3D Avatar Feedback**: VRM avatars, animated in Blender, respond to ML predictions for intuitive visual cues.
+- **Scalable Backend**: Supabase with PostgreSQL manages user data, quiz progress, and content APIs.
+- **Full-Stack Integration**: Unified ML inference, backend APIs, and 3D frontend for a cohesive learning platform.
 
 ## Technologies Used
 
-- **FastAI**: Transfer learning for image classification with rapid prototyping.
-- **React Three Fiber & Three-VRM**: For WebGL-powered 3D avatar animations driven by ML signals.
-- **Supabase**: Backend-as-a-service with PostgreSQL, authentication, and real-time APIs.
-- **React.js & TypeScript**: For building performant, component-based UIs.
-- **REST APIs + JWT**: For secure model data exchange and user authentication.
+- **FastAI & ResNet34**: For transfer learning and sign classification model development.
+- **Blender**: For animating VRM avatars with precise, non-AI-driven motion design.
+- **React Three Fiber & Three-VRM**: For rendering and controlling 3D avatars in the browser.
+- **Mixamo**: Used for supplementary animation assets where applicable.
+- **Supabase**: Provided PostgreSQL, authentication, and real-time APIs.
+- **React.js & TypeScript**: Built performant, component-based user interfaces.
+- **Gradio & Hugging Face Spaces**: Hosted ML models for API-driven inference.
+- **REST APIs + JWT**: Enabled secure data exchange and user authentication.
 
 ## Challenges and Learnings
 
-Integrating live ML inference into a 3D front-end pipeline required low-latency prediction serving and tight control over animation timing. Mapping gesture classifications to avatar motions meant designing a middleware layer to convert prediction tensors into semantic motion instructions.
+Deploying large ResNet34 models to Hugging Face Spaces via Gradio was challenging due to resource constraints and API latency. Animating VRM avatars with Three-VRM, a niche library, required custom middleware to map ML predictions to Blender-crafted animations, ensuring smooth and accurate movements.
 
-I also encountered edge cases in model generalization across languages and sign styles, which improved my understanding of data augmentation, loss functions, and multi-class evaluation.
-
-Architecturally, designing a system that orchestrates ML, backend, and interactive frontend components taught me to think in terms of **AI-native application flows**.
+Generalizing the model across diverse sign languages improved my skills in data augmentation and multi-class classification. Orchestrating ML, backend, and 3D frontend components taught me to design **low-latency, AI-native systems** tailored for interactive education.
 
 ## Outcome
 
-The final platform functions as a **real-time AI learning assistant**, offering multimodal sign feedback via accurate recognition and expressive 3D animation. It demonstrates how **AI models can be productized into user-centric applications** with meaningful educational outcomes. This experience sharpened my skills in applied ML, AI UX design, and full-stack orchestration — aligning directly with modern AI tooling and agent-based architectures.
+The final product is a fully functional **e-learning platform** that combines real-time sign language recognition with immersive 3D visuals and interactive quizzes. It demonstrates how AI, animation, and full-stack engineering can converge to build meaningful educational experiences. This project sharpened my skills in applied ML, 3D animation pipelines, and cross-stack system design.
 
 ---
 
-This project exemplifies my ability to build applied AI experiences — combining vision models, real-time inference, and immersive frontends into scalable, impactful software systems.
+This project reflects my ability to build scalable, AI-integrated learning tools—combining computer vision, Blender-animated avatars, and robust full-stack development to support accessible and engaging sign language education.

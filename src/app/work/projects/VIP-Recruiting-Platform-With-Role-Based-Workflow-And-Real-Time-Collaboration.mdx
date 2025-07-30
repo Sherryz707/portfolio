@@ -1,0 +1,74 @@
+---
+title: "VIP Recruiting Platform with Real-Time Collaboration"
+publishedAt: "2025-01-10"
+summary: "Developed a full-featured recruitment workflow platform with role-based access, document handling, real-time updates, and performance evaluation—built using the MERN stack, React, ShadCN UI, and TanStack Query."
+images:
+  - "/images/projects/vip/vip_0.png"
+  - "/images/projects/vip/vip_8.png"
+  - "/images/projects/vip/vip_7.png"
+  - "/images/projects/vip/vip_6.png"
+  - "/images/projects/vip/vip_5.png"
+  - "/images/projects/vip/vip_4.png"
+  - "/images/projects/vip/vip_3.png"
+  
+team:
+  - name: "Shahr Bano Bokhari"
+    role: "Full Stack Developer"
+    avatar: "/images/avatar.jpeg"
+    linkedIn: "https://www.linkedin.com/in/shahrbano-bokhari-55989135b/"
+link: "https://vip-applicant.com/"
+---
+
+## Overview
+
+VIP Recruiting is a full-stack recruitment workflow system designed with three distinct user roles: **Admin**, **Employee**, and **Recruit**. The platform streamlines onboarding, document verification, task assignment, and performance evaluation—wrapped in a responsive and modern UI.
+
+Admins can upload Terms of Service (ToS) documents, which recruits must sign during registration. Admins can view submitted ToS and update recruit statuses (e.g., Active). Employees handle assignment workflows, track recruit progress, and submit final evaluations. Recruits can monitor their training materials, feedback, and status in real-time.
+
+## Key Features
+
+- **Role-Based Access**:
+  - **Admin**: Uploads ToS, activates recruits, views documents.
+  - **Employee**: Assigns learning materials (three levels), provides feedback, and gives a final performance report.
+  - **Recruit**: Signs ToS on registration, accesses tasks and materials, receives feedback and performance summary.
+
+- **ToS Document Handling**:
+  - Admin uploads ToS.
+  - Recruits view and sign ToS during registration.
+  - Signed ToS is stored and viewable by admin.
+
+- **Assignment Workflow**:
+  - Three training levels per recruit.
+  - Employees assign tasks and provide structured feedback.
+  - Final performance report issued at end of training.
+
+- **Real-Time Chat System**:
+  - Chat between users is implemented without Socket.IO.
+  - Uses **TanStack Query** with **Zero Caching** to simulate real-time messaging via periodic fetching.
+
+- **Modern UI/UX**:
+  - Built with **ShadCN UI** components and a clean React layout.
+  - Responsive design across all user views.
+
+## Technologies Used
+
+- **MERN Stack**: MongoDB, Express.js, React, Node.js for scalable backend and frontend development.  
+- **React & TypeScript**: Strongly typed components with clean structure.  
+- **ShadCN UI**: Customizable and accessible UI components.  
+- **TanStack Query (React Query)**: For real-time-like data syncing, including chat functionality.  
+- **Cloud Storage (optional)**: For storing signed documents and attachments (depending on deployment).  
+- **REST API + JWT Auth**: For secure access control and data operations.
+
+## Challenges and Learnings
+
+One of the key challenges was implementing a **real-time chat feature** without using traditional WebSocket solutions like Socket.IO. Due to client constraints, I leveraged **TanStack Query with no cache and background refetching** to mimic real-time interactions effectively and efficiently.
+
+Another learning experience involved designing a **clean, role-based flow** where every action—document uploads, assignments, status changes—triggered state updates visible to the correct users. Managing different user experiences in a single codebase improved my understanding of multi-role design and secure backend routing.
+
+## Outcome
+
+The VIP Recruiting platform offers a complete recruitment and onboarding workflow with real-time collaboration, robust role management, and document tracking. It demonstrates my ability to deliver polished, functional, and scalable software tailored to client needs—even when working around technical or budget constraints.
+
+---
+
+This project showcases my skill in building tailored full-stack systems with modern UI/UX, flexible architecture, and real-time interactions—without relying on heavyweight solutions when not required.
