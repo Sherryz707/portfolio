@@ -19,7 +19,7 @@ const newsletter = {
   description: (
     <>
       I write about full-stack development, AI systems, and building intelligent digital solutions
-      using modern tools and frameworks.
+      using modern tools and frameworks. View my resume{' '}
     </>
   ),
 };
@@ -36,14 +36,14 @@ const social = [
     link: 'https://www.linkedin.com/in/shahrbano-bokhari-55989135b/',
   },
   {
-    name: 'X',
-    icon: 'x',
-    link: '',
-  },
-  {
     name: 'Email',
     icon: 'email',
     link: `mailto:${person.email}`,
+  },
+  {
+    name: 'View Resume',
+    icon: '',
+    link: 'https://res.cloudinary.com/dvklgnyge/image/upload/v1753876050/resume_gn9obf.pdf',
   },
 ];
 
@@ -67,6 +67,10 @@ const home = {
     <>
       I'm {person.firstName}, a full stack developer passionate about applied AI, agentic systems,
       and building meaningful software experiences.
+      <a href="https://res.cloudinary.com/dvklgnyge/image/upload/v1753876050/resume_gn9obf.pdf">
+        {' '}
+        View My Resume
+      </a>
     </>
   ),
 };
