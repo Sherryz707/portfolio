@@ -42,7 +42,7 @@ const social = [
   },
   {
     name: 'View Resume',
-    icon: '',
+    icon: 'document',
     link: 'https://res.cloudinary.com/dvklgnyge/image/upload/v1753876050/resume_gn9obf.pdf',
   },
 ];
