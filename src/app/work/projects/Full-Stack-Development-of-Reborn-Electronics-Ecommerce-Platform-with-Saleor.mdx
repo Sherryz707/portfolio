@@ -1,0 +1,80 @@
+---
+title: 'Full Stack Development of Reborn Electronics Ecommerce Platform Using Saleor'
+publishedAt: '2025-09-30'
+summary: 'Led the development of a scalable ecommerce platform using Next.js, Saleor, GraphQL, and a custom payment integration layer for JazzCash.'
+images:
+  - '/images/projects/reborn/cover.jpeg'
+  - '/images/projects/reborn/figma.jpeg'
+  - '/images/projects/reborn/img-1.jpeg'
+  - '/images/projects/reborn/img-2.jpeg'
+  - '/images/projects/reborn/img-3.jpeg'
+team:
+  - name: 'Shahr Bano Bokhari'
+    role: 'Full Stack Developer'
+    avatar: '/images/avatar.jpeg'
+    linkedIn: 'https://www.linkedin.com/in/shahrbano-bokhari-55989135b/'
+---
+
+## Overview
+
+I led the full stack development of Reborn Electronics' ecommerce platform, building a responsive and scalable web application designed to provide a seamless shopping experience.  
+The application uses **Next.js** for the frontend and **Saleor** as a headless ecommerce backend, with **GraphQL APIs** and **URQL** providing efficient data fetching, caching, and state management.
+
+A major part of the project included building custom infrastructure for payment handling, integrating JazzCash through an intermediary service designed for clean webhook processing and reliable communication with the frontend.
+
+## Key Features
+
+- **Next.js & Saleor Integration**  
+  Developed a performant React frontend connected to Saleor’s GraphQL backend using URQL for optimized queries, caching, and state management.
+
+- **Core Ecommerce Pages**  
+  Implemented responsive catalog, category, and product detail pages with dynamic data loading, filtering, and pagination.
+
+- **Design Collaboration**  
+  Worked closely with UI/UX designers to transform Figma designs into pixel-accurate pages using Tailwind CSS and Headless UI components.
+
+- **Custom JazzCash Payment Integration**  
+  Built an intermediary service responsible for:
+
+  - receiving and validating JazzCash webhook events
+  - normalizing and structuring payment status data
+  - securely forwarding clean events back to the frontend
+  - maintaining a decoupled architecture between the payment gateway and main app
+
+  This design kept the payment flow maintainable and adaptable even when the JazzCash sandbox environment was unreliable.
+
+- **Scalable Architecture**  
+  Structured the platform using reusable components, modular API layers, and predictable data flows, enabling future expansion with minimal friction.
+
+## Technologies Used
+
+- **Next.js** — for building scalable, performant user interfaces
+- **Saleor** — headless ecommerce platform with a robust GraphQL API
+- **URQL** — lightweight GraphQL client for data fetching and caching
+- **Tailwind CSS + Headless UI** — modern styling and accessible components
+- **JazzCash API** — integrated through a custom intermediary service
+- **Node.js** — backend service for webhook handling and payment workflow logic
+
+## Challenges and Learnings
+
+Integrating JazzCash presented significant challenges due to inconsistent sandbox behavior and limited documentation. To manage this, I developed a dedicated intermediate service that:
+
+- listened for JazzCash webhook notifications
+- validated and sanitized incoming payloads
+- transformed raw events into frontend-friendly formats
+- relayed updates to the main UI reliably
+
+This approach reduced coupling, improved debuggability, and established a structure that can support other payment gateways in the future.
+
+On the frontend, managing product filters, dynamic queries, and nested states across multiple pages strengthened my understanding of GraphQL workflows, caching strategies, and UI state synchronization.
+
+## Outcome
+
+The final ecommerce platform provides a secure, responsive, and scalable shopping experience aligned with business needs.  
+Despite limitations in the JazzCash sandbox, the intermediary payment service architecture ensured reliability and long-term maintainability.
+
+This project significantly strengthened my full-stack skill set — from frontend performance optimization to backend service design and practical GraphQL-driven development.
+
+---
+
+This case study demonstrates my ability to build user-focused, production-ready full-stack applications supported by clean architecture and modern web technologies.

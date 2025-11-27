@@ -53,7 +53,7 @@ const home = {
   label: 'Home',
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building intelligent, full-stack applications and AI-powered systems</>,
+  headline: <>Building thoughtful full-stack applications with emerging data and AI tools</>,
   featured: {
     display: true,
     title: (
@@ -65,8 +65,9 @@ const home = {
   },
   subline: (
     <>
-      I'm {person.firstName}, a full stack developer passionate about applied AI, agentic systems,
-      and building meaningful software experiences.
+      I'm {person.firstName}, a full-stack developer currently pursuing a Master's in Data Science.
+      I enjoy building practical, user-focused software and exploring how modern ML tools can
+      enhance real-world applications.
       <a href="https://res.cloudinary.com/dvklgnyge/image/upload/v1753876050/resume_gn9obf.pdf">
         {' '}
         View My Resume
@@ -219,43 +220,6 @@ const about = {
         ],
       },
       {
-        company: 'ML Algorithms Series (Colab Notebooks)',
-        timeframe: 'Present',
-        role: 'ML Engineer (Self-Driven Learning Project)',
-        achievements: [
-          <>
-            Completed a hands-on deep dive into core{' '}
-            <strong>supervised machine learning algorithms</strong> using{' '}
-            <strong>Jupyter Notebooks</strong> in <strong>Google Colab</strong>.
-          </>,
-          <>
-            Implemented and compared performance of key models including{' '}
-            <strong>Linear Regression</strong>, <strong>Ridge/Lasso/ElasticNet</strong>,{' '}
-            <strong>Logistic Regression</strong>, <strong>Naive Bayes</strong>, <strong>KNN</strong>
-            , <strong>Decision Trees</strong>, <strong>Random Forests</strong>,{' '}
-            <strong>Gradient Boosting</strong>, <strong>AdaBoost</strong>, and{' '}
-            <strong>XGBoost</strong>.
-          </>,
-          <>
-            Visualized model metrics and feature impact using <strong>Matplotlib</strong>,{' '}
-            <strong>Seaborn</strong>, and <strong>Confusion Matrices</strong> for interpretability.
-          </>,
-          <>
-            Followed and completed the Udemy course "
-            <em>The Complete Data Science with Machine Learning and NLP</em>" by{' '}
-            <strong>Krish Naik</strong> as structured curriculum guidance.
-          </>,
-        ],
-        images: [
-          {
-            src: '/images/projects/ml-algos/colab-cover.PNG',
-            alt: 'Tree Algo in Colab',
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
         company: 'AIQ Decisions',
         timeframe: 'Jan 2025',
         role: 'No-Code Developer Intern',
@@ -363,8 +327,12 @@ const about = {
     title: 'Studies',
     institutions: [
       {
+        name: 'Information Technology University (ITU), Lahore',
+        description: <>M.S. in Data Science — Started 2025</>,
+      },
+      {
         name: 'University of Management and Technology (UMT), Lahore',
-        description: <>B.S. in Computer Science, graduating July 2025.</>,
+        description: <>B.S. in Computer Science - 2025</>,
       },
       {
         name: 'Punjab Group of Colleges (PGC), Lahore',
@@ -392,12 +360,14 @@ const about = {
       },
       {
         title: 'AI/ML & Python',
-        description: <>FastAI, scikit-learn, Pandas, LangChain, RAG, Ollama integration</>,
+        description: (
+          <>FastAI,scikit-learn, Pandas, familiarity with modern LLM tooling (LangChain, Ollama)</>
+        ),
         images: [],
       },
       {
         title: 'Data & Visualization',
-        description: <>Python, R (ggplot2, dplyr, caret), Matplotlib, Seaborn</>,
+        description: <>Python, R, Matplotlib, Seaborn</>,
         images: [],
       },
     ],
@@ -471,26 +441,6 @@ const gallery = {
     },
     {
       src: '/images/projects/smartflow/img-2.png',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/projects/ml-algos/colab-2.PNG',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/projects/ml-algos/colab-3.PNG',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/projects/ml-algos/colab-cover.PNG',
-      alt: 'image',
-      orientation: 'horizontal',
-    },
-    {
-      src: '/images/projects/ml-algos/colab.PNG',
       alt: 'image',
       orientation: 'horizontal',
     },
