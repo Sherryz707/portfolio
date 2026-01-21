@@ -220,7 +220,7 @@ const about = {
         ],
       },
       {
-        company: 'AIQ Decisions',
+        company: 'Early stage startup',
         timeframe: 'Jan 2025',
         role: 'No-Code Developer Intern',
         achievements: [
